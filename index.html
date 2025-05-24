@@ -1,0 +1,219 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Personal Portfolio Website</title>
+     <link rel="stylesheet" href=" style.css">
+     <script src="https://kit.fontawesome.com/9a1de6a1af.js" crossorigin="anonymous"></script>
+</head>    
+<body>
+<div id="header">
+    <div class="container">  
+    <nav>
+        <img src="logo1234.jpg" class="logo">
+        <ul id="sidemenu">
+    <li><a href="#header">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+</ul>
+<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+    <div class="header-text">
+        <p>Student</p>
+        <h1>Hi, I am <span>Swasti</span><br>Pathak from India</h1>
+    </div>
+</div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+   <div class="container" >
+      <div class="row">
+        <div class="about-col-1">
+            <img src="user1234.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Aspiring Computer Science Engineer currently pursuing B.Tech at Amity
+ University Kolkata, with a strong foundation in programming and a passion for
+ problem-solving, development, and continuous learning. Seeking opportunities
+ to grow in software development and contribute to impactful tech projects</p>
+                   <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div> 
+                   <div class="tab-contents active-tab" id="skills"> 
+                    <ul>
+                        <li><span> Computer Science Engineer</span><br>Code Enthusiast</li>
+                        <li><span>Web Development</span><br>DSA</li>
+
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - 2027</span><br>Student at Amity University Kolkata</li>
+                        <li><span>Current CGPA-7.0</span><br>  </li>
+
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Member IT Club Amity School of Engineering and Technology</span><br>Tech Projects</li>
+                        <li><span>Participated in Smart India Hackathon 2023 Software Edition Internal Hackathon Round for Smart India Hackathon 2024</span><br>  </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------services--------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>The primary function of web design is to create a structured, attractive, and user-friendly digital environment that helps users interact with content and services efficiently.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX</h2>
+                <p>
+                    <strong>User Interface (UI):</strong> Enhances brand identity through layout, colors, typography, and imagery.<br>
+                    <strong>User Experience (UX):</strong> Ensures intuitive navigation, readability, and ease of use.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+ </div>
+</div>
+<!-- --------- portfolio------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app that connects talented people from all over the global</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app that connects talented people from all over the global</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online ShoppingApp</h3>
+                    <p>The app that connects talented people from all over the global</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See More</a>
+    </div>
+ </div>
+ <!-----------contact----------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>swastiii89@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7003066599</p>
+                <div class="Social-Icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                 <a href="https://linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Swasti CV.pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email"  placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+            </div>
+        </div>
+        </div>
+        <div class="Copyright">
+        <p>&copy; 2025 Swasti. Made with <i class="fa-solid fa-heart"></i>All rights reserved.</p>
+</div>
+
+
+
+<script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link"); 
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxCadohiqlaWInHTQTk0pSBLktS8C2EFoD8C45iGnkPoOR43TPmFTkyvhQWI-8EK8Cx/exec';
+
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "Message sent Successfully";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+</script>
+</body>    
+</html> 
